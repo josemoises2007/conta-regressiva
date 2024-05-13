@@ -7,8 +7,44 @@
     <title>Meus objetivos do ano</title>
     <link rel="stylesheet" href="style.css">
 </head>
+tyle>
+  
 
-<body>
+  .preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+    z-index: 9999;
+    animation: abrirCortina 2s forwards;
+    box-shadow: inset 0 0 20px 5px #6fff57, inset 0 0 40px 10px #6fff57,
+                inset 0 0 60px 15px #6fff57;
+  }
+
+  .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Outros estilos aqui */
+
+  @keyframes abrirCortina {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+</style>
+<body> <div class="preload"></div>
     <section class="conteudo-principal">
         <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
         <div class="conteudo">
